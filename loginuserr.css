@@ -1,0 +1,187 @@
+/* Reset margin dan padding untuk elemen HTML dan body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.login {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Style untuk container login */
+.login-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px rgba(94, 94, 94, 0.3);
+  padding: 50px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Style untuk container login */
+.register-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px rgba(255, 0, 0, 0.3);
+  padding: 50px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.register-container:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Style untuk formulir */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+}
+
+button {
+  background-color: #ffff;
+  background-image: linear-gradient(
+    288deg,
+    rgba(0, 85, 255, 1) 1.5%,
+    rgba(4, 56, 115, 1) 91.6%
+  );
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.5s ease-in-out;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #ffffff;
+  background-image: linear-gradient(
+    288deg,
+    rgba(4, 56, 115, 1) 1.5%,
+    rgba(0, 85, 255, 1) 91.6%
+  );
+  border-radius: 20px;
+  padding: 10px 40px;
+}
+
+/* Style untuk tautan registrasi */
+p {
+  margin-top: 15px;
+  color: #777;
+}
+
+a {
+  color: #114480;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style untuk input dengan ikon */
+.input-icon {
+  position: relative;
+  border: none;
+}
+
+.input-icon i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #999;
+  margin-right: 10px;
+  /* Warna ikon sesuaikan dengan keinginan Anda */
+}
+
+.input-icon input {
+  padding-left: 30px;
+  max-width: calc(100% - 25px);
+  border-radius: 2vh;
+  outline: none;
+  /* Sesuaikan jarak kiri sesuai dengan ukuran ikon */
+}
+
+/* Style untuk container gambar bulat */
+.user-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  /* Jarak antara gambar dengan form */
+  border-radius: 50%;
+  /* Membuat gambar menjadi bulat */
+  width: 150px;
+  /* Lebar gambar */
+  height: 100px;
+  /* Tinggi gambar */
+  overflow: hidden;
+  /* Untuk memastikan gambar tidak melebihi batas lingkaran */
+  position: relative;
+  /* Tambahkan ini untuk posisi absolut */
+  margin: auto;
+  margin-bottom: 2vh;
+}
+
+/* Style untuk gambar */
+.user-avatar img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  /* Membuat gambar dalam bentuk bulat */
+  position: absolute;
+  /* Mengatur posisi absolut */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /* Mengatur gambar tepat di tengah */
+}

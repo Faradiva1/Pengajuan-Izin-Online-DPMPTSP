@@ -1,0 +1,4 @@
+{
+    "prettier.enableDebugLogs": true,
+    "editor.formatOnSave": true
+}

@@ -1,0 +1,200 @@
+/* Reset margin dan padding untuk elemen HTML dan body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Menetapkan latar belakang dan mengatur font untuk seluruh halaman */
+body {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+/* Style card */
+.card {
+  display: inline-block;
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(1, 12, 103, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Style gambar kiri */
+.left-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style konten (tombol) */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Mengatur tampilan tombol */
+.buttonadmin,
+.buttonuser {
+  background-color: #ffffff;
+  background-image: linear-gradient(288deg, rgba(0, 85, 255, 1) 1.5%, rgba(4, 56, 115, 1) 91.6%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+/* Style tambahan sesuai kebutuhan */
+.buttonadmin:hover,
+.buttonuser:hover {
+  background-color: #85ffbd;
+  background-image: linear-gradient(288deg, rgba(4, 56, 115, 1) 1.5%, rgba(0, 85, 255, 1) 91.6%);
+  padding: 10px 40px;
+  border-radius: 60px;
+  font-size: 20px;
+}
+
+/* Style gambar kanan */
+.right-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animasi mengetik sendiri */
+.card .card-content .content .typing-animation {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: typing 5s steps(100, end) infinite;
+}
+
+#menu_kiri {
+  float: left;
+  width: 79%;
+  background-color: #fff;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(14, 174, 87, 1) 0%, rgba(12, 116, 117, 1) 90%);
+  height: 100vh;
+}
+
+.logo {
+  margin-top: 30px;
+  margin-left: 10svh;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.isi {
+  margin-top: 30svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.greetings {
+  font-size: 3rem;
+  font-weight: 200;
+}
+.greetings > span {
+  animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    color: #fdc134;
+    text-shadow: 0 0 12px #fdc134, 0 0 100px #08b0fe, 0 0 100px #39c6d6;
+  }
+  10%,
+  90% {
+    color: #213b52;
+    text-shadow: none;
+  }
+}
+
+.greetings > span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.greetings > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.greetings > span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.greetings > span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.greetings > span:nth-child(6) {
+  animation-delay: 0.11s;
+}
+.greetings > span:nth-child(7) {
+  animation-delay: 0.14s;
+}
+.greetings > span:nth-child(8) {
+  animation-delay: 0.16s;
+}
+.greetings > span:nth-child(9) {
+  animation-delay: 0.18s;
+}
+.greetings > span:nth-child(10) {
+  animation-delay: 0.21s;
+}
+.greetings > span:nth-child(11) {
+  animation-delay: 0.24s;
+}
+.greetings > span:nth-child(12) {
+  animation-delay: 0.6s;
+}
+.greetings > span:nth-child(13) {
+  animation-delay: 0.8s;
+}
+
+@media screen and (max-width: 574px) {
+  .greetings {
+    display: block;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
